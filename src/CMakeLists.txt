@@ -87,6 +87,11 @@ set(SAMPLES
 
     heat
     mnist
+
+    nbody
+    motionsim
+    rng-wallace
+    stencil
 )
 
 foreach (SAMPLE ${SAMPLES})
