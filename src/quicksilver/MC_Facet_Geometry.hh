@@ -2,6 +2,7 @@
 #define MCT_FACET_GEOMETRY_3D_INCLUDE
 
 #include "macros.hh"
+#include "MC_Vector.hh"
 #include <cstddef> // NULL
 
 // A x + B y + C z + D = 0,  (A,B,C) is the plane normal and is normalized.
