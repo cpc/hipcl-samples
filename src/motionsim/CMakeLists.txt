@@ -1,2 +1,2 @@
-add_hipcl_test (motionsim MotionSim PASSED motionsim.cpp 10000)
+add_hipcl_binary (motionsim motionsim.cpp)
 

@@ -1,2 +1,1 @@
-
-add_hipcl_test(heat heat PASSED heat.cpp)
+add_hipcl_binary(heat heat.cpp)

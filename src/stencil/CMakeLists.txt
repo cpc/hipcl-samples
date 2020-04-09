@@ -1,1 +1,1 @@
-add_hipcl_test(stencil_1d stencil_1d PASSED stencil_1d.cpp)
+add_hipcl_binary(stencil_1d stencil_1d.cpp)
