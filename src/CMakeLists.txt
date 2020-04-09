@@ -88,6 +88,8 @@ set(SAMPLES
     heat
     mnist
 
+    finance-apps
+
     nbody
     motionsim
     rng-wallace
