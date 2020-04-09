@@ -97,9 +97,6 @@ int main(int argc, char **argv) {
   hipFree(dOData);
   free(hOData);
 
-  size_t s = sizeof(unsigned long long);
-  printf("Size of unsigned long long: %zu \n", s);
-
   if (reduce_SP(1024)) // assume number of elements is a multiple of 256
   {
     printf("FAILED!\n");
@@ -115,10 +112,8 @@ int main(int argc, char **argv) {
   if (!testResult) {
     printf("FAILED!\n");
     return 1;
-  } else {
-    printf("PASSED!\n");
-    return 0;
   }
 
+  printf("PASSED!\n");
   return 0;
 }
