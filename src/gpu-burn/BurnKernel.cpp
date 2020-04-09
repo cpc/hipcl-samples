@@ -75,7 +75,7 @@ int BurnKernel::Init() {
     mHostBdata[i] = (rand() % 1000000) / 100000.0;
   }
 
-  size_t freeMem = getAvailableMemory() * cUseMem;
+  size_t freeMem = std::min((3UL << 30), (unsigned long)(getAvailableMemory() * cUseMem)); // min(3 GBytes, mem * cUseMem)
   size_t matrixSizeBytes = sizeof(float) * cMatrixSize;
   mNumIterations = (freeMem - (matrixSizeBytes * 2)) / matrixSizeBytes;
 
