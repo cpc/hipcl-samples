@@ -8,7 +8,6 @@
 #include <time.h>
 #include <sys/time.h>
 #include <math.h>
-#include <hip/hip_runtime.h>
 
 #include "monteCarloStructs.h"
 

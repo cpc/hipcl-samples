@@ -3,12 +3,12 @@
 // May 10, 2012
 // Function for running Monte Carlo on the GPU using OpenCL
 
-#include <hip/hip_runtime.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
 #include <time.h>
+#include "hip/hip_runtime.h"
 
 #include "monteCarloConstants.h"
 

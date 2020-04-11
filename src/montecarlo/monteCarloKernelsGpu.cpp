@@ -3,13 +3,13 @@
 // May 10, 2012
 // GPU Kernels for running monte carlo
 
-#include <hip/hip_runtime.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
 #include <time.h>
 
+#include "hip/hip_runtime.h"
 #include "monteCarloKernels.h"
 #include "mt19937.h"
 

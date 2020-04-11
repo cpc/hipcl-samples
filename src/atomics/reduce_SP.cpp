@@ -1,4 +1,4 @@
-#include <hip/hip_runtime.h>
+#include "hip/hip_runtime.h"
 
 __device__ float atomicAdd_SP(float *address, float val) {
   union D {

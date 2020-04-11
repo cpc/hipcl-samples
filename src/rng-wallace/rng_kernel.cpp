@@ -2,8 +2,7 @@
 #ifndef _RNG_KERNEL_CU_
 #define _RNG_KERNEL_CU_
 
-#include <hip/hip_runtime.h>
-
+#include "hip/hip_runtime.h"
 #include "constants.h"
 #include "rand_helpers.h"
 
@@ -24,9 +23,8 @@ void init_rng_tests() {
   randomNumbers = (float *)malloc(4 * WALLACE_OUTPUT_SIZE);
 
   // Asian option memory allocations
-  (hipMalloc((void **)&devicerngChi2Corrections, 4 * WALLACE_CHI2_COUNT));
-
-  (hipMalloc((void **)&device_randomNumbers, 4 * WALLACE_OUTPUT_SIZE));
+  hipMalloc((void **)&devicerngChi2Corrections, 4 * WALLACE_CHI2_COUNT);
+  hipMalloc((void **)&device_randomNumbers, 4 * WALLACE_OUTPUT_SIZE);
   // Initialise asian option parameters, random guesses at this point...
 
   for (int i = 0; i < WALLACE_CHI2_COUNT; i++) {
@@ -42,9 +40,8 @@ void cleanup_rng_options() {
 
   free(randomNumbers);
 
-  (hipFree(devicerngChi2Corrections));
-
-  (hipFree(device_randomNumbers));
+  hipFree(devicerngChi2Corrections);
+  hipFree(device_randomNumbers);
 }
 
 void computeRNG() {

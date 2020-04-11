@@ -1,16 +1,16 @@
-#include <hip/hip_runtime.h>
 // bondsEngine.cu
 // Scott Grauer-Gray sgrauerg@gmail.com
 // Contains main function for running manual CUDA and CPU bonds application
-
-#include "bondsKernelsCpu.cuh"
-#include "bondsKernelsGpu.cuh"
-#include "bondsStructs.cuh"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
 #include <time.h>
+#include "hip/hip_runtime.h"
+#include "bondsKernelsCpu.cuh"
+#include "bondsKernelsGpu.cuh"
+#include "bondsStructs.cuh"
+
 
 #define MIN(a, b) (((a) < (b)) ? (a) : (b))
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))

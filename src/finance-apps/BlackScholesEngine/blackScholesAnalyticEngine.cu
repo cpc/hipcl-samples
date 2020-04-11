@@ -1,4 +1,8 @@
-#include <hip/hip_runtime.h>
+#include <math.h>
+#include <stdio.h>
+#include <sys/time.h>
+#include <time.h>
+#include "hip/hip_runtime.h"
 // blackScholesAnalyticEngine.cu
 // Scott Grauer-Gray
 // Functions for running black scholes using the analytic engine (from Quantlib)
@@ -12,10 +16,6 @@
 
 #include "blackScholesAnalyticEngineKernelsCpu.cuh"
 
-#include <math.h>
-#include <stdio.h>
-#include <sys/time.h>
-#include <time.h>
 
 #define NUM_DIFF_SETTINGS 37
 

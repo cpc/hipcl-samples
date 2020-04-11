@@ -17,9 +17,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#include <hip/hip_runtime.h>
 #include <stdlib.h>
 
+#include "hip/hip_runtime.h"
 #include "GSimulation.hpp"
 #include "cpu_time.hpp"
 
