@@ -79,6 +79,7 @@ set(SAMPLES
 
     aes
     atomics
+    chemv
 
     mixbench
     gpu-burn
