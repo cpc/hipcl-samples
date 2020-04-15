@@ -39,8 +39,7 @@ function(add_hipcl_test_or_binary)
 
   set_target_properties("${H_EXEC_NAME}" PROPERTIES CXX_STANDARD_REQUIRED ON)
 
-  #target_link_libraries("${H_EXEC_NAME}" hip::hipcl)
-  target_link_libraries("${H_EXEC_NAME}" "hipcl")
+  target_link_libraries("${H_EXEC_NAME}" hip::hipcl)
 
   install(TARGETS "${H_EXEC_NAME}"
           RUNTIME DESTINATION "${INSTALL_BINDIR}")
@@ -80,6 +79,7 @@ set(SAMPLES
     aes
     atomics
     chemv
+    memcpy-perf
 
     mixbench
     gpu-burn
