@@ -95,6 +95,7 @@ set(SAMPLES
     nbody
     motionsim
     rng-wallace
+    raytrace
     stencil
 )
 
