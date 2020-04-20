@@ -79,9 +79,11 @@ set(SAMPLES
     aes
     atomics
     chemv
+    clenergy
     memcpy-perf
 
     mixbench
+    PolyBench
     gpu-burn
 
     montecarlo
