@@ -99,6 +99,7 @@ set(SAMPLES
     rng-wallace
     raytrace
     stencil
+    vote
 )
 
 foreach (SAMPLE ${SAMPLES})
