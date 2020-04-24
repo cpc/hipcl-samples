@@ -81,6 +81,7 @@ set(SAMPLES
     chemv
     clenergy
     memcpy-perf
+    reduction_atomic
 
     mixbench
     PolyBench
