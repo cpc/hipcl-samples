@@ -4,12 +4,12 @@
  * Contact: Elias Konstantinidis <ekondis@gmail.com>
  **/
 
-#include "lhiputil.h"
-#include "mix_kernels_hip.h"
-#include <hip/hip_runtime.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "lhiputil.h"
+#include "mix_kernels_hip.h"
+#include "hip/hip_runtime.h"
 
 #define VECTOR_SIZE (32 * 1024 * 1024)
 

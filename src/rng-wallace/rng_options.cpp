@@ -3,8 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <hip/hip_runtime.h>
-
+#include "hip/hip_runtime.h"
 #include "constants.h"
 #include "rand_helpers.h"
 

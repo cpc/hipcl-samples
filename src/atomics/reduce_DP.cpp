@@ -1,4 +1,4 @@
-#include <hip/hip_runtime.h>
+#include "hip/hip_runtime.h"
 
 __device__ double atomicAdd_DP(double *address, double val) {
   union D {

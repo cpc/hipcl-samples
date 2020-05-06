@@ -1,13 +1,12 @@
 
-#include <hip/hip_runtime.h>
 #include <inttypes.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
 #include <iostream>
+#include "hip/hip_runtime.h"
 
 #define AES_BLOCK_SIZE 16
 #define THREADS_PER_BLOCK 256

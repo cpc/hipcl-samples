@@ -20,9 +20,9 @@
 #ifndef _WALLACE_KERNEL_CU_
 #define _WALLACE_KERNEL_CU_
 
-#include "constants.h"
-#include <hip/hip_runtime.h>
 #include <stdio.h>
+#include "hip/hip_runtime.h"
+#include "constants.h"
 
 __device__ void Hadamard4x4a(float &p, float &q, float &r, float &s) {
   float t = (p + q + r + s) / 2;

@@ -1,8 +1,7 @@
-//#include "hip/hip_runtime.h"
-#include "hip/hipcl.hh"
 #include <chrono>
 #include <math.h>
 #include <stdio.h>
+#include "hip/hip_runtime.h"
 
 char *cp_to_device(char *from, size_t size) {
   char *tmp;

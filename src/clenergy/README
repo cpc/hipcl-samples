@@ -1,0 +1,9 @@
+To test performance, just run 'cuenergy' and it will run various
+timings and print performance results.
+
+To run on a different GPU (rather than device 0) simply execute it with
+the ID of the GPU to use, e.g.:
+  ./cuenergy 1
+
+
+

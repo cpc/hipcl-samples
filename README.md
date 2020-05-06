@@ -2,7 +2,7 @@
 
 This repository contains 3rd party examples ported to HIPCL.
 
-For license and copyright, please check each respective example's source.
+For license and copyright, please check each example's source.
 
 The src/CMakeLists.txt and files outside src/ subdirectory are licensed under MIT, see LICENSE
 #### Requirements

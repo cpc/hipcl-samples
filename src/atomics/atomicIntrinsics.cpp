@@ -10,9 +10,7 @@
  */
 
 #include <cstdio>
-
-#include <hip/hip_runtime.h>
-
+#include "hip/hip_runtime.h"
 #include "common.h"
 
 __global__ void testKernel(int *g_odata) {

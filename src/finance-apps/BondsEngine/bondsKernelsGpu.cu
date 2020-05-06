@@ -1,8 +1,8 @@
-#include <hip/hip_runtime.h>
 // bondsKernelsGpu.cu
 // Scott Grauer-Gray
 // Bonds kernels to run on the GPU w/ CUDA
 
+#include "hip/hip_runtime.h"
 #include "bondsKernelsGpu.cuh"
 
 __device__ int monthLengthKernelGpu(int month, bool leapYear) {

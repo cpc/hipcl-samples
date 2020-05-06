@@ -78,8 +78,13 @@ set(SAMPLES
 
     aes
     atomics
+    chemv
+    clenergy
+    memcpy-perf
+    reduction_atomic
 
     mixbench
+    PolyBench
     gpu-burn
 
     montecarlo
@@ -93,7 +98,9 @@ set(SAMPLES
     nbody
     motionsim
     rng-wallace
+    raytrace
     stencil
+    vote
 )
 
 foreach (SAMPLE ${SAMPLES})

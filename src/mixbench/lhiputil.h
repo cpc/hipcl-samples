@@ -7,10 +7,9 @@
 #ifndef _HIPUTIL_H_
 #define _HIPUTIL_H_
 
-#include <hip/hip_runtime.h>
 #include <stdio.h>
 #include <stdlib.h>
-//#include <hip/hip_runtime_api.h>
+#include "hip/hip_runtime.h"
 
 #define CUDA_SAFE_CALL(call)                                                   \
   {                                                                            \

@@ -1,9 +1,14 @@
-message(STATUS "downloading volfrac.dat.tgz")
-file(DOWNLOAD https://github.com/lanl/MultiMatTest/raw/master/volfrac.dat.tgz "${CMAKE_CURRENT_BINARY_DIR}/volfrac.dat.tgz")
 
-message(STATUS "extracting volfrac.dat.tgz")
-execute_process(COMMAND ${CMAKE_COMMAND} -E tar xzf "${CMAKE_CURRENT_BINARY_DIR}/volfrac.dat.tgz"
+if(NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/volfrac.dat.tgz") 
+  message(STATUS "downloading volfrac.dat.tgz")
+  file(DOWNLOAD https://github.com/lanl/MultiMatTest/raw/master/volfrac.dat.tgz "${CMAKE_CURRENT_BINARY_DIR}/volfrac.dat.tgz")
+endif()
+
+if(NOT EXISTS "${CMAKE_CURRENT_BINARY_DIR}/volfrac.dat") 
+    message(STATUS "extracting volfrac.dat.tgz")
+    execute_process(COMMAND ${CMAKE_COMMAND} -E tar xzf "${CMAKE_CURRENT_BINARY_DIR}/volfrac.dat.tgz"
                 WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}")
+endif()
 
 add_hipcl_binary(multimat_hipcl compact.hip.cpp full_matrix.cpp multimat.cpp)
 
